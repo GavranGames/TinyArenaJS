@@ -1,0 +1,45 @@
+html, body{
+	background:black;
+	color:white;
+}
+.cell{
+	float:left;
+	width:16px;
+	height:16px;
+	font-size:16px;
+	overflow:hidden;
+	font-family:"Courier New", Courier, monospace;
+	text-align:center;
+	color:white;
+	box-sizing:border-box;
+}
+#map{
+	width:336px;
+	height:336px;
+	border:2px solid white;
+	padding:3px;
+	float:left;
+}
+#map hr{
+	clear:both;
+	color:transparent;
+}
+#panel{
+	height:324px;
+	padding:10px;
+	margin-left:350px;
+}
+#log{
+	overflow:auto;
+	height:300px;
+}
+#display{
+	position:fixed;
+	height:96%;
+	width:99%;
+	top:2%;
+}
+.bTop{border-top:1px solid white;}
+.bRight{border-right:1px solid white;}
+.bBottom{border-bottom:1px solid white;}
+.bLeft{border-left:1px solid white;}
