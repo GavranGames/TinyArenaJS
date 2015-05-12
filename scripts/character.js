@@ -25,6 +25,9 @@ Character.prototype = {
 		}
 		else{addLog('You hit a wall.');}
 	},
+	wait:function(){
+		npcTurn();
+	},
 	attack:function(target){
 		damages = Math.floor(Math.random()*4);
 		target.health -= damages;

@@ -21,7 +21,8 @@ Npc.prototype = {
 			map.refreshMap();
 		}
 		else if(ma !== false){
-			this.attack(player);
+			if(ma === 'player'){this.attack(player);}
+			else{this.attack(npcs[ma]);}
 		}
 		else{addLog(this.name+' hit a wall.');}
 	},

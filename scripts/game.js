@@ -9,28 +9,31 @@ $(document).ready(function(){
 		if(player.health < 1){return true;}
 		switch(event.keyCode){
 			case(37):case(100):
-				player.move(-1,0)
+				player.move(-1,0);
 				break;
 			case(103):
-				player.move(-1,1)
+				player.move(-1,1);
 				break;
 			case(38):case(104):
-				player.move(0,1)
+				player.move(0,1);
 				break;
 			case(105):
-				player.move(1,1)
+				player.move(1,1);
 				break;
 			case(39):case(102):
-				player.move(1,0)
+				player.move(1,0);
 				break;
 			case(99):
-				player.move(1,-1)
+				player.move(1,-1);
 				break;
 			case(40):case(98):
-				player.move(0,-1)
+				player.move(0,-1);
 				break;
 			case(97):
-				player.move(-1,-1)
+				player.move(-1,-1);
+				break;
+			case(101):
+				player.wait();
 				break;
 		}
 	});
