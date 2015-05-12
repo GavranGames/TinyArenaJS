@@ -13,6 +13,15 @@ html, body{
 	color:white;
 	box-sizing:border-box;
 }
+.sand{
+	color:#FF3;
+}
+.bloody .sand{
+	color:red;
+}
+#score span{
+	color:gold;
+}
 #map{
 	width:336px;
 	height:336px;
@@ -23,6 +32,9 @@ html, body{
 #map hr{
 	clear:both;
 	color:transparent;
+	height:0;
+	overflow:hidden;
+	border:transparent;
 }
 #panel{
 	height:324px;
