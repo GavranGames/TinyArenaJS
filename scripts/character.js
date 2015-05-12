@@ -29,6 +29,7 @@ Character.prototype = {
 		npcTurn();
 	},
 	attack:function(target){
+		if(target.health < 1){return false;}
 		damages = Math.floor(Math.random()*4);
 		target.health -= damages;
 		if(damages > 0){map.getBloody(target);}
